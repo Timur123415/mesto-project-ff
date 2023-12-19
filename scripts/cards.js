@@ -25,4 +25,3 @@ const initialCards = [
     }
 ];
 
-const cardContainer = document.querySelector('.places__list');
