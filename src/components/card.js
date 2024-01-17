@@ -1,12 +1,10 @@
-
-
-export function deleteCard(evt) {
-  evt.target.closest('.places__item').remove();
+export function deleteCard(event) {
+  event.target.closest('.places__item').remove();
 }
 
 
-export function likeCard(evt){
-  evt.target.classList.toggle('card__like-button_is-active');
+export function likeCard(event){
+  event.target.classList.toggle('card__like-button_is-active');
 }
 
 
