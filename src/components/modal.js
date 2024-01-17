@@ -3,13 +3,15 @@ export function openModal(popup) {
     document.addEventListener('keyup', closeModalbyEsc);
 }
 
+
 export function closeModal(popup){
     popup.classList.remove('popup_is-opened');
     document.removeEventListener('keyup', closeModalbyEsc);
 }
 
-function closeModalbyEsc(evt){
-    if(evt.key === "Escape"){
+
+function closeModalbyEsc(event){
+    if(event.key === "Escape"){
         const popup = document.querySelector('.popup_is-opened');
         if(popup !== null){
             closeModal(popup);
