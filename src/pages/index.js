@@ -19,9 +19,11 @@ const popups = [
         openBtn: document.querySelector('.profile__add-button'),
         popupWnd: addCardPopup,
         openCallBack: function(){
+        
         }
     },
 ]
+
 
 const forms = [
     {
@@ -52,15 +54,17 @@ const forms = [
     }
 ]
 
-function popupImageClick(event){
-    const image = event.target;
 
-    popupImageLink.src = image.src;
-    popupImageLink.alt = image.alt;
+function popupImageClick(event){
+    const img = event.target;
+
+    popupImageLink.src = img.src;
+    popupImageLink.alt = img.alt;
     
-    popupImageName.textContent = image.alt;
+    popupImageName.textContent = img.alt;
     openModal(popupImage);
 }
+
 
 function buildCardInfo(name, link){
     return {
@@ -72,6 +76,7 @@ function buildCardInfo(name, link){
     };
 }
 
+
 function initalizeCards(cards) {
     cards.forEach(item => {
         const cardInfo = buildCardInfo(item.name, item.link);
@@ -79,6 +84,7 @@ function initalizeCards(cards) {
         cardContainer.append(cardElement);
     });
 }
+
 
 function initPopups(popups){
     popups.forEach(({openBtn, popupWnd, openCallBack}) => {
@@ -103,7 +109,7 @@ function initPopups(popups){
 
 function initForms(forms){
     forms.forEach(({form, popupWnd, closeCallBack}) => {
-        form.addEventListener('submit', (evt) => {
+        form.addEventListener("submit", (evt) => {
           evt.preventDefault();
           closeModal(popupWnd);
           closeCallBack();
