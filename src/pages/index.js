@@ -78,7 +78,7 @@ function buildCardInfo(name, link){
 
 
 function initalizeCards(cards) {
-    cards.forEach(item => {
+    cards?.forEach(item => {
         const cardInfo = buildCardInfo(item.name, item.link);
         const cardElement = createCard(cardInfo);
         cardContainer.append(cardElement);
