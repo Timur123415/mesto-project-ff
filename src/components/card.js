@@ -18,7 +18,7 @@ export function createCard(cardInfo) {
   cardImage.setAttribute('src', cardInfo.link);
   cardImage.setAttribute('alt', cardInfo.name);
 
-  cardImage.addEventListener('click', cardInfo.popupImageClick);
+  cardImage.addEventListener('click', cardInfo.openImageClick);
 
   const buttonDelete = cardElement.querySelector('.card__delete-button');
   buttonDelete.addEventListener('click', cardInfo.deleteCard);
