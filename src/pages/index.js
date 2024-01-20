@@ -19,7 +19,6 @@ const popups = [
         openBtn: document.querySelector('.profile__add-button'),
         popupWnd: addCardPopup,
         openCallBack: function(){
-        
         }
     },
 ]
@@ -55,7 +54,7 @@ const forms = [
 ]
 
 
-function popupImageClick(event){
+function openImageClick(event){
     const img = event.target;
 
     popupImageLink.src = img.src;
@@ -72,13 +71,14 @@ function buildCardInfo(name, link){
         link: link,
         likeCard: likeCard,
         deleteCard: deleteCard,
-        popupImageClick: popupImageClick
+        openImageClick: openImageClick
     };
 }
 
 
 function initalizeCards(cards) {
-    cards?.forEach(item => {
+
+    cards.forEach(item => {
         const cardInfo = buildCardInfo(item.name, item.link);
         const cardElement = createCard(cardInfo);
         cardContainer.append(cardElement);
@@ -106,6 +106,7 @@ function initPopups(popups){
         })
     })
 }
+
 
 function initForms(forms){
     forms.forEach(({form, popupWnd, closeCallBack}) => {
