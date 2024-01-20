@@ -1,3 +1,5 @@
+
+
 export function deleteCard(event) {
   event.target.closest('.places__item').remove();
 }
