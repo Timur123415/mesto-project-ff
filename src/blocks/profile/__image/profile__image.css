@@ -9,6 +9,7 @@
   background-position: center;
   margin: 0 29px 0 0;
   /*Макет очень кривоват, как считать этот отступ я хз. Проявите тут лояльность пока что*/
+<<<<<<< HEAD
 
   /**
     По центру у нас теперь иконка карандаша - делаем flex
@@ -29,6 +30,8 @@
   width: 26px;
   height: 26px;
   background-image: url('../../../images/pen.svg');
+=======
+>>>>>>> fc547fb77c5b120641b73da97bf9e27b1484a261
 }
 
 @media screen and (max-width: 740px) {
