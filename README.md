@@ -8,4 +8,7 @@
 
 =======
 https://github.com/Timur123415/mesto-project-ff.git
+
+ https://timur123415.github.io/mesto-project-ff/ - посетите сайт
+
 >>>>>>> fc547fb77c5b120641b73da97bf9e27b1484a261
