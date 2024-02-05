@@ -1,5 +1,4 @@
 export function openModal(popup) {
-<<<<<<< HEAD
   popup.classList.add('popup_is-opened');
   document.addEventListener('keyup', closeModalbyEsc);
 }
@@ -15,7 +14,6 @@ function closeModalbyEsc(event) {
     closeModal(popup);
   }
 }
-=======
     popup.classList.add('popup_is-opened');
    
     document.addEventListener('keyup', closeModalbyEsc);
@@ -36,4 +34,3 @@ function closeModalbyEsc(event){
         }
     }
 }
->>>>>>> fc547fb77c5b120641b73da97bf9e27b1484a261
