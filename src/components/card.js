@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { addLikeById, deleteCardById, removeLikeById } from './api';
 
 
@@ -81,7 +80,6 @@ export function createCard(cardInfo, profileOwner) {
 
   return cardElement;
 }
-=======
 
 
 export function deleteCard(event) {
@@ -115,4 +113,3 @@ export function createCard(cardInfo) {
   return cardElement;
 }
 
->>>>>>> fc547fb77c5b120641b73da97bf9e27b1484a261
