@@ -1,5 +1,4 @@
 import './index.css';
-<<<<<<< HEAD
 //import {initialCards} from  '../components/cards.js'
 import { createCard, likeCard, deleteCard } from '../components/card.js';
 import {
@@ -150,7 +149,6 @@ function buildCardInfo(card) {
     deleteCard,
     popupImageClick,
   };
-=======
 import {initialCards} from  '../components/cards.js'
 import {createCard, likeCard, deleteCard} from '../components/card.js'
 import {cardContainer, profileEditPopup, addCardPopup, profileTitle, profileDescription, formAddCard,
@@ -225,12 +223,10 @@ function buildCardInfo(name, link){
         deleteCard: deleteCard,
         openImageClick: openImageClick
     };
->>>>>>> fc547fb77c5b120641b73da97bf9e27b1484a261
 }
 
 
 function initalizeCards(cards) {
-<<<<<<< HEAD
   cards.forEach((item) => {
     const cardInfo = buildCardInfo(item);
     const cardElement = createCard(cardInfo, profileOwner);
@@ -294,7 +290,6 @@ fetchData();
 initPopups(popups);
 initForms(forms);
 enableValidation(validationConfig);
-=======
 
     cards.forEach(item => {
         const cardInfo = buildCardInfo(item.name, item.link);
@@ -339,4 +334,3 @@ function initForms(forms){
 initalizeCards(initialCards);
 initPopups(popups);
 initForms(forms);
->>>>>>> fc547fb77c5b120641b73da97bf9e27b1484a261
