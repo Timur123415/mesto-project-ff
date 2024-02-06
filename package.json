@@ -375,13 +375,9 @@
   },
   "scripts": {
     "build": "webpack --mode production",
-<<<<<<< HEAD
     "dev": "webpack serve",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
-=======
-    "dev": "webpack serve"
->>>>>>> fc547fb77c5b120641b73da97bf9e27b1484a261
   },
   "author": "Timur Belov",
   "license": "ISC",
@@ -393,20 +389,12 @@
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.8.1",
     "cssnano": "^6.0.1",
-<<<<<<< HEAD
     "gh-pages": "^6.1.0",
     "html-webpack-plugin": "^5.5.3",
     "mini-css-extract-plugin": "^2.7.6",
     "postcss-loader": "^7.3.3",
     "webpack": "^5.88.2",
     "webpack-cli": "5.1.4",
-=======
-    "html-webpack-plugin": "^5.5.3",
-    "mini-css-extract-plugin": "^2.7.6",
-    "postcss-loader": "^7.3.3",
-    "webpack": "^5.89.0",
-    "webpack-cli": "^5.1.4",
->>>>>>> fc547fb77c5b120641b73da97bf9e27b1484a261
     "webpack-dev-server": "^4.15.1"
   }
 }
